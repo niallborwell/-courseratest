@@ -1,0 +1,170 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+body{
+	font-family: helvetica, serif;
+	font-size: 100%	;
+	width: 100%;
+}
+
+h1 {
+	margin-top: 5%;
+	margin-bottom: 5%;
+	text-align: center;
+	font-size: 1.75em;
+}
+
+p {
+	
+	margin-top: 5px;
+	margin: 10px;
+	clear: both;
+}
+
+div#container {
+  background-color: #FFFFFF;
+  position: relative;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  align-content: center;
+ /* max-width: 960px; */
+
+}
+
+div.chicken {
+	position: relative;
+	float: left;
+
+	border: 1px solid black;
+	background-color: #c0d1ed;
+	margin: 1.5%;
+	overflow: hidden;
+	
+}
+
+div.beef{
+	position: relative;
+	float: left;
+	
+	border: 1px solid black;
+	background-color: #c0d1ed;
+	margin: 1.5%;
+	overflow: hidden;
+}
+
+div.sushi{
+	position: relative;
+	float: left;
+	
+	border: 1px solid black;
+	background-color: #c0d1ed;
+	margin: 1.5%;
+	overflow: hidden;
+}
+
+
+#chickenTitle, #beefTitle, #sushiTitle {
+	position: relative;
+	float: right;
+	margin-bottom: 2%;
+	width: 40%;
+	max-height: 20%;
+	text-align: center;
+	font-size: 71%;
+}
+
+#chickenTitle{
+	background-color: #e4ef92;
+}
+
+#beefTitle {
+	background-color: #f77690;
+}
+
+#sushiTitle{
+	background-color: #71c9dd;
+}
+
+section{
+	clear: left;
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+
+  #container {
+    width: 100%;
+  }
+
+  div.chicken, div.beef, div.sushi {
+  	width: 30%;
+	min-height: 30%;
+  }
+ 
+}
+/********** Medium devices only **********/
+
+@media (min-width: 767px) and (max-width: 991px) 
+{
+
+#container{
+	width: 100%;
+	padding: 2%;
+}
+
+  div.chicken, div.beef {
+  	width: 46%;
+  }
+
+  div.sushi {
+    
+  	clear: left; 
+    width: 95%;
+
+
+  }
+
+  #sushiTitle {
+
+  	width: 20%;
+  }
+}
+  
+  /********** Small devices only **********/
+
+@media (max-width: 766px) {
+
+#container{
+		padding: 10%;
+		padding-top: 5%;
+}
+
+h1 {
+	margin-bottom: 0;
+}
+
+div.chicken {
+	width: 100%;
+	clear:left;
+}
+
+div.beef {
+	width: 100%;
+	clear:left;
+}
+
+div.sushi {
+	width: 100%;
+	clear:left;
+}
+
+}
+
+
+
+
